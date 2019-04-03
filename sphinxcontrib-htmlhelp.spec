@@ -6,7 +6,7 @@
 #
 Name     : sphinxcontrib-htmlhelp
 Version  : 1.0.1
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/92/0e/ba2033e7ca81a46ab5295063a8eec4c063e1127e4ebca0956186da84c13b/sphinxcontrib-htmlhelp-1.0.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/92/0e/ba2033e7ca81a46ab5295063a8eec4c063e1127e4ebca0956186da84c13b/sphinxcontrib-htmlhelp-1.0.1.tar.gz
 Source99 : https://files.pythonhosted.org/packages/92/0e/ba2033e7ca81a46ab5295063a8eec4c063e1127e4ebca0956186da84c13b/sphinxcontrib-htmlhelp-1.0.1.tar.gz.asc
@@ -63,7 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1554253550
+export SOURCE_DATE_EPOCH=1554254335
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
