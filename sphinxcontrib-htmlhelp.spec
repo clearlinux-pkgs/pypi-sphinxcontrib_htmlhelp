@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x102C2C17498D6B9E (i.tkomiya@gmail.com)
 #
 Name     : sphinxcontrib-htmlhelp
-Version  : 1.0.1
-Release  : 2
-URL      : https://files.pythonhosted.org/packages/92/0e/ba2033e7ca81a46ab5295063a8eec4c063e1127e4ebca0956186da84c13b/sphinxcontrib-htmlhelp-1.0.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/92/0e/ba2033e7ca81a46ab5295063a8eec4c063e1127e4ebca0956186da84c13b/sphinxcontrib-htmlhelp-1.0.1.tar.gz
-Source99 : https://files.pythonhosted.org/packages/92/0e/ba2033e7ca81a46ab5295063a8eec4c063e1127e4ebca0956186da84c13b/sphinxcontrib-htmlhelp-1.0.1.tar.gz.asc
+Version  : 1.0.2
+Release  : 3
+URL      : https://files.pythonhosted.org/packages/f1/f2/88e9d6dc4a17f1e95871f8b634adefcc5d691334f7a121e9f384d1dc06fd/sphinxcontrib-htmlhelp-1.0.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/f1/f2/88e9d6dc4a17f1e95871f8b634adefcc5d691334f7a121e9f384d1dc06fd/sphinxcontrib-htmlhelp-1.0.2.tar.gz
+Source99 : https://files.pythonhosted.org/packages/f1/f2/88e9d6dc4a17f1e95871f8b634adefcc5d691334f7a121e9f384d1dc06fd/sphinxcontrib-htmlhelp-1.0.2.tar.gz.asc
 Summary  : No summary provided
 Group    : Development/Tools
 License  : BSD-2-Clause
@@ -27,7 +27,7 @@ BuildRequires : virtualenv
 ======================
 sphinxcontrib-htmlhelp
 ======================
-sphinxcontrib-htmlhelp is a sphinx extension which ...
+sphinxcontrib-htmlhelp is a sphinx extension which renders HTML help files.
 
 %package license
 Summary: license components for the sphinxcontrib-htmlhelp package.
@@ -56,14 +56,14 @@ python3 components for the sphinxcontrib-htmlhelp package.
 
 
 %prep
-%setup -q -n sphinxcontrib-htmlhelp-1.0.1
+%setup -q -n sphinxcontrib-htmlhelp-1.0.2
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1554254335
+export SOURCE_DATE_EPOCH=1555006322
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
