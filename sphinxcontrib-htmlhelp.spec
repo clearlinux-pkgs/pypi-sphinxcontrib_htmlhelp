@@ -6,7 +6,7 @@
 #
 Name     : sphinxcontrib-htmlhelp
 Version  : 2.0.0
-Release  : 27
+Release  : 28
 URL      : https://files.pythonhosted.org/packages/eb/85/93464ac9bd43d248e7c74573d58a791d48c475230bcf000df2b2700b9027/sphinxcontrib-htmlhelp-2.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/eb/85/93464ac9bd43d248e7c74573d58a791d48c475230bcf000df2b2700b9027/sphinxcontrib-htmlhelp-2.0.0.tar.gz
 Source1  : https://files.pythonhosted.org/packages/eb/85/93464ac9bd43d248e7c74573d58a791d48c475230bcf000df2b2700b9027/sphinxcontrib-htmlhelp-2.0.0.tar.gz.asc
@@ -16,16 +16,12 @@ License  : BSD-2-Clause
 Requires: sphinxcontrib-htmlhelp-license = %{version}-%{release}
 Requires: sphinxcontrib-htmlhelp-python = %{version}-%{release}
 Requires: sphinxcontrib-htmlhelp-python3 = %{version}-%{release}
-Requires: flake8
-Requires: mypy
 BuildRequires : buildreq-distutils3
-BuildRequires : flake8
-BuildRequires : mypy
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pytest
-BuildRequires : tox
-BuildRequires : virtualenv
+BuildRequires : pypi(pluggy)
+BuildRequires : pypi(py)
+BuildRequires : pypi(pytest)
+BuildRequires : pypi(tox)
+BuildRequires : pypi(virtualenv)
 
 %description
 sphinxcontrib-htmlhelp is a sphinx extension which renders HTML help files.
@@ -66,7 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1621871052
+export SOURCE_DATE_EPOCH=1641428626
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
