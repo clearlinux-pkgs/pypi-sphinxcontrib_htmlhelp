@@ -4,53 +4,53 @@
 #
 # Source0 file verified with key 0x102C2C17498D6B9E (i.tkomiya@gmail.com)
 #
-Name     : sphinxcontrib-htmlhelp
+Name     : pypi-sphinxcontrib_htmlhelp
 Version  : 2.0.0
-Release  : 28
+Release  : 29
 URL      : https://files.pythonhosted.org/packages/eb/85/93464ac9bd43d248e7c74573d58a791d48c475230bcf000df2b2700b9027/sphinxcontrib-htmlhelp-2.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/eb/85/93464ac9bd43d248e7c74573d58a791d48c475230bcf000df2b2700b9027/sphinxcontrib-htmlhelp-2.0.0.tar.gz
 Source1  : https://files.pythonhosted.org/packages/eb/85/93464ac9bd43d248e7c74573d58a791d48c475230bcf000df2b2700b9027/sphinxcontrib-htmlhelp-2.0.0.tar.gz.asc
 Summary  : sphinxcontrib-htmlhelp is a sphinx extension which renders HTML help files
 Group    : Development/Tools
 License  : BSD-2-Clause
-Requires: sphinxcontrib-htmlhelp-license = %{version}-%{release}
-Requires: sphinxcontrib-htmlhelp-python = %{version}-%{release}
-Requires: sphinxcontrib-htmlhelp-python3 = %{version}-%{release}
+Requires: pypi-sphinxcontrib_htmlhelp-license = %{version}-%{release}
+Requires: pypi-sphinxcontrib_htmlhelp-python = %{version}-%{release}
+Requires: pypi-sphinxcontrib_htmlhelp-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-BuildRequires : pypi(pluggy)
 BuildRequires : pypi(py)
-BuildRequires : pypi(pytest)
-BuildRequires : pypi(tox)
-BuildRequires : pypi(virtualenv)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 sphinxcontrib-htmlhelp is a sphinx extension which renders HTML help files.
 
 %package license
-Summary: license components for the sphinxcontrib-htmlhelp package.
+Summary: license components for the pypi-sphinxcontrib_htmlhelp package.
 Group: Default
 
 %description license
-license components for the sphinxcontrib-htmlhelp package.
+license components for the pypi-sphinxcontrib_htmlhelp package.
 
 
 %package python
-Summary: python components for the sphinxcontrib-htmlhelp package.
+Summary: python components for the pypi-sphinxcontrib_htmlhelp package.
 Group: Default
-Requires: sphinxcontrib-htmlhelp-python3 = %{version}-%{release}
+Requires: pypi-sphinxcontrib_htmlhelp-python3 = %{version}-%{release}
 
 %description python
-python components for the sphinxcontrib-htmlhelp package.
+python components for the pypi-sphinxcontrib_htmlhelp package.
 
 
 %package python3
-Summary: python3 components for the sphinxcontrib-htmlhelp package.
+Summary: python3 components for the pypi-sphinxcontrib_htmlhelp package.
 Group: Default
 Requires: python3-core
 Provides: pypi(sphinxcontrib_htmlhelp)
 
 %description python3
-python3 components for the sphinxcontrib-htmlhelp package.
+python3 components for the pypi-sphinxcontrib_htmlhelp package.
 
 
 %prep
@@ -62,7 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641428626
+export SOURCE_DATE_EPOCH=1641586804
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -74,8 +74,8 @@ python3 setup.py build
 %install
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/package-licenses/sphinxcontrib-htmlhelp
-cp %{_builddir}/sphinxcontrib-htmlhelp-2.0.0/LICENSE %{buildroot}/usr/share/package-licenses/sphinxcontrib-htmlhelp/7477e3e4ce73d4501e4086813a0d88b153ab4423
+mkdir -p %{buildroot}/usr/share/package-licenses/pypi-sphinxcontrib_htmlhelp
+cp %{_builddir}/sphinxcontrib-htmlhelp-2.0.0/LICENSE %{buildroot}/usr/share/package-licenses/pypi-sphinxcontrib_htmlhelp/7477e3e4ce73d4501e4086813a0d88b153ab4423
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -86,7 +86,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/sphinxcontrib-htmlhelp/7477e3e4ce73d4501e4086813a0d88b153ab4423
+/usr/share/package-licenses/pypi-sphinxcontrib_htmlhelp/7477e3e4ce73d4501e4086813a0d88b153ab4423
 
 %files python
 %defattr(-,root,root,-)
