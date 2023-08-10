@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-sphinxcontrib_htmlhelp
-Version  : 2.0.2
-Release  : 39
-URL      : https://files.pythonhosted.org/packages/09/95/03ebf50bae251ac077cf3fdc6ed1c01a96817f60f30a15d9a5d6ed61f27b/sphinxcontrib_htmlhelp-2.0.2.tar.gz
-Source0  : https://files.pythonhosted.org/packages/09/95/03ebf50bae251ac077cf3fdc6ed1c01a96817f60f30a15d9a5d6ed61f27b/sphinxcontrib_htmlhelp-2.0.2.tar.gz
+Version  : 2.0.3
+Release  : 40
+URL      : https://files.pythonhosted.org/packages/e6/24/0dcb5a8aec31046cf37691ac64d21b9a4dfc977f5ba3237f1104940d8d0c/sphinxcontrib_htmlhelp-2.0.3.tar.gz
+Source0  : https://files.pythonhosted.org/packages/e6/24/0dcb5a8aec31046cf37691ac64d21b9a4dfc977f5ba3237f1104940d8d0c/sphinxcontrib_htmlhelp-2.0.3.tar.gz
 Summary  : sphinxcontrib-htmlhelp is a sphinx extension which renders HTML help files
 Group    : Development/Tools
 License  : BSD-2-Clause
@@ -60,10 +60,10 @@ python3 components for the pypi-sphinxcontrib_htmlhelp package.
 
 
 %prep
-%setup -q -n sphinxcontrib_htmlhelp-2.0.2
-cd %{_builddir}/sphinxcontrib_htmlhelp-2.0.2
+%setup -q -n sphinxcontrib_htmlhelp-2.0.3
+cd %{_builddir}/sphinxcontrib_htmlhelp-2.0.3
 pushd ..
-cp -a sphinxcontrib_htmlhelp-2.0.2 buildavx2
+cp -a sphinxcontrib_htmlhelp-2.0.3 buildavx2
 popd
 
 %build
@@ -71,7 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1691528856
+export SOURCE_DATE_EPOCH=1691679086
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
