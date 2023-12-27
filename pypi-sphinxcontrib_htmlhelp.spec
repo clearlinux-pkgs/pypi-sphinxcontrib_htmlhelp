@@ -5,7 +5,7 @@
 #
 Name     : pypi-sphinxcontrib_htmlhelp
 Version  : 2.0.4
-Release  : 42
+Release  : 43
 URL      : https://files.pythonhosted.org/packages/fd/2d/abf5cd4cc1d5cd9842748b15a28295e4c4a927facfa8a0e173bd3f151bc5/sphinxcontrib_htmlhelp-2.0.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/fd/2d/abf5cd4cc1d5cd9842748b15a28295e4c4a927facfa8a0e173bd3f151bc5/sphinxcontrib_htmlhelp-2.0.4.tar.gz
 Summary  : sphinxcontrib-htmlhelp is a sphinx extension which renders HTML help files
